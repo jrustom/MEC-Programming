@@ -1,0 +1,378 @@
+{
+    "1": {
+        "number": 1,
+        "Price": 60,
+        "Price per house": 50,
+        "Rent": [
+            2,
+            10,
+            30,
+            90,
+            160,
+            250
+        ],
+        "Mortgage": 30
+    },
+    "3": {
+        "number": 3,
+        "Price": 60,
+        "Price per house": 50,
+        "Rent": [
+            4,
+            20,
+            60,
+            180,
+            320,
+            450
+        ],
+        "Mortgage": 30
+    },
+    "5": {
+        "number": 5,
+        "Price": 200,
+        "Price per house": 100,
+        "Rent": [
+            25,
+            50,
+            100,
+            200
+        ],
+        "Mortgage": 100
+    },
+    "6": {
+        "number": 6,
+        "Price": 100,
+        "Price per house": 50,
+        "Rent": [
+            6,
+            30,
+            90,
+            270,
+            400,
+            550
+        ],
+        "Mortgage": 50
+    },
+    "8": {
+        "number": 8,
+        "Price": 100,
+        "Price per house": 50,
+        "Rent": [
+            6,
+            30,
+            90,
+            270,
+            400,
+            550
+        ],
+        "Mortgage": 50
+    },
+    "9": {
+        "number": 9,
+        "Price": 120,
+        "Price per house": 50,
+        "Rent": [
+            8,
+            40,
+            100,
+            300,
+            450,
+            600
+        ],
+        "Mortgage": 60
+    },
+    "11": {
+        "number": 11,
+        "Price": 140,
+        "Price per house": 100,
+        "Rent": [
+            10,
+            50,
+            150,
+            450,
+            625,
+            750
+        ],
+        "Mortgage": 70
+    },
+    "12": {
+        "number": 12,
+        "Price": 150,
+        "Price per house": 0,
+        "Rent": [
+            4,
+            10
+        ],
+        "Mortgage": 75
+    },
+    "13": {
+        "number": 13,
+        "Price": 140,
+        "Price per house": 100,
+        "Rent": [
+            10,
+            50,
+            150,
+            450,
+            625,
+            750
+        ],
+        "Mortgage": 70
+    },
+    "14": {
+        "number": 14,
+        "Price": 160,
+        "Price per house": 100,
+        "Rent": [
+            12,
+            60,
+            180,
+            500,
+            700,
+            900
+        ],
+        "Mortgage": 80
+    },
+    "15": {
+        "number": 15,
+        "Price": 200,
+        "Price per house": 100,
+        "Rent": [
+            25,
+            50,
+            100,
+            200
+        ],
+        "Mortgage": 100
+    },
+    "16": {
+        "number": 16,
+        "Price": 180,
+        "Price per house": 100,
+        "Rent": [
+            14,
+            70,
+            200,
+            550,
+            750,
+            950
+        ],
+        "Mortgage": 90
+    },
+    "18": {
+        "number": 18,
+        "Price": 180,
+        "Price per house": 100,
+        "Rent": [
+            14,
+            70,
+            200,
+            550,
+            750,
+            950
+        ],
+        "Mortgage": 90
+    },
+    "19": {
+        "number": 19,
+        "Price": 200,
+        "Price per house": 100,
+        "Rent": [
+            16,
+            80,
+            220,
+            600,
+            800,
+            1000
+        ],
+        "Mortgage": 100
+    },
+    "21": {
+        "number": 21,
+        "Price": 220,
+        "Price per house": 150,
+        "Rent": [
+            18,
+            90,
+            250,
+            700,
+            875,
+            1050
+        ],
+        "Mortgage": 110
+    },
+    "23": {
+        "number": 23,
+        "Price": 220,
+        "Price per house": 150,
+        "Rent": [
+            18,
+            90,
+            250,
+            700,
+            875,
+            1050
+        ],
+        "Mortgage": 110
+    },
+    "24": {
+        "number": 24,
+        "Price": 240,
+        "Price per house": 150,
+        "Rent": [
+            20,
+            100,
+            300,
+            750,
+            925,
+            1100
+        ],
+        "Mortgage": 120
+    },
+    "25": {
+        "number": 25,
+        "Price": 200,
+        "Price per house": 0,
+        "Rent": [
+            25,
+            50,
+            100,
+            200
+        ],
+        "Mortgage": 100
+    },
+    "26": {
+        "number": 26,
+        "Price": 260,
+        "Price per house": 150,
+        "Rent": [
+            22,
+            110,
+            330,
+            800,
+            975,
+            1150
+        ],
+        "Mortgage": 130
+    },
+    "27": {
+        "number": 27,
+        "Price": 260,
+        "Price per house": 150,
+        "Rent": [
+            22,
+            110,
+            330,
+            800,
+            975,
+            1150
+        ],
+        "Mortgage": 130
+    },
+    "28": {
+        "number": 28,
+        "Price": 150,
+        "Price per house": 0,
+        "Rent": [
+            4,
+            10
+        ],
+        "Mortgage": 75
+    },
+    "29": {
+        "number": 29,
+        "Price": 280,
+        "Price per house": 150,
+        "Rent": [
+            24,
+            120,
+            360,
+            850,
+            1025,
+            1200
+        ],
+        "Mortgage": 140
+    },
+    "31": {
+        "number": 31,
+        "Price": 300,
+        "Price per house": 200,
+        "Rent": [
+            26,
+            130,
+            390,
+            900,
+            1100,
+            1275
+        ],
+        "Mortgage": 150
+    },
+    "32": {
+        "number": 32,
+        "Price": 300,
+        "Price per house": 200,
+        "Rent": [
+            26,
+            130,
+            390,
+            900,
+            1100,
+            1275
+        ],
+        "Mortgage": 150
+    },
+    "34": {
+        "number": 34,
+        "Price": 320,
+        "Price per house": 200,
+        "Rent": [
+            28,
+            150,
+            450,
+            1000,
+            1200,
+            1400
+        ],
+        "Mortgage": 160
+    },
+    "35": {
+        "number": 35,
+        "Price": 200,
+        "Price per house": 0,
+        "Rent": [
+            25,
+            50,
+            100,
+            200
+        ],
+        "Mortgage": 100
+    },
+    "37": {
+        "number": 37,
+        "Price": 350,
+        "Price per house": 200,
+        "Rent": [
+            35,
+            175,
+            500,
+            1100,
+            1300,
+            1500
+        ],
+        "Mortgage": 175
+    },
+    "39": {
+        "number": 39,
+        "Price": 400,
+        "Price per house": 200,
+        "Rent": [
+            50,
+            200,
+            600,
+            1400,
+            1700,
+            2000
+        ],
+        "Mortgage": 200
+    }
+}

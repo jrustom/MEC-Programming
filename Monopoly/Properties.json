@@ -98,7 +98,7 @@
     "12": {
         "number": 12,
         "Price": 150,
-        "Price per house": 0,
+        "Price per house": 1,
         "Rent": [
             4,
             10
@@ -232,7 +232,7 @@
     "25": {
         "number": 25,
         "Price": 200,
-        "Price per house": 0,
+        "Price per house": 1,
         "Rent": [
             25,
             50,
@@ -272,7 +272,7 @@
     "28": {
         "number": 28,
         "Price": 150,
-        "Price per house": 0,
+        "Price per house": 1,
         "Rent": [
             4,
             10
@@ -338,7 +338,7 @@
     "35": {
         "number": 35,
         "Price": 200,
-        "Price per house": 0,
+        "Price per house": 1,
         "Rent": [
             25,
             50,

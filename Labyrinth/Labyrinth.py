@@ -124,7 +124,7 @@ class Labyrinth:
         return []
 
 
-def write_path_to_txt(path, output_filename):
+def write(path, output_filename):
     '''
     Used for submission
     Writes the path of djikstras to the output file
@@ -140,7 +140,7 @@ if __name__ == "__main__":
 
     # Generate a visual representation of graph for demo
     if showGraph:
-        filename = 'Labyrinth/labyrinths/easy/labyrinth_99.json'
+        filename = 'Labyrinth/labyrinths/easy/labyrinth_00.json'
         test = Labyrinth(filename)
 
         path = test.dijkstra()
@@ -175,5 +175,5 @@ if __name__ == "__main__":
                 path = test.dijkstra()
 
                 if path:
-                    write_path_to_txt(path, output_filepath)
+                    write(path, output_filepath)
                     print(f"Solution for {filename} written to {output_filepath}")

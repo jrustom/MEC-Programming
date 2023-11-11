@@ -4,53 +4,79 @@
 # Make dictionary for each box with name along with the value of each of those names ()
 # Approximate Equation for finding the original amount for one character: final amount + price of each box they occupy + price of each house they own on each box
 
-dictionary = {
-    "Mediterraneal_Avenue": 60,
-    "Baltic_Avenue": 60,
-    "Reading_railroad": 200,
-    "Oriental_Avenue": 100,
-    "Vermont_Avenue": 100,
-    "Connecticut_Avenue": 120,
-    "St.Charle's_Place": 140,
-    "Electric_Company": 150,
-    "States_Avenue": 140,
-    "Virginia_Avenue": 160,
-    "Pennsylvania_Railroad": 200,
-    "St.James_Place": 180,
-    "Tennessee_Avenue": 180,
-    "New_York_Avenue": 200,
-    "Kentucky_Avenue": 220,
-    "Indiana_Avenue": 220,
-    "Illinois_Avenue": 240,
-    "BnO_Railroad": 200,
-    "Atlantic_Avenue": 260,
-    "Ventinor_Avenue": 260,
-    "Waterworks": 150,
-    "Martin_Gardens": 280,
-    "Pacific_Avenue": 300,
-    "North_Carolina_Avenue": 300,
-    "Pennsylvania_Avenue": 320,
-    "Short_Line": 200,
-    "Park_Place": 350,
-    "Boardwalk": 400,
-}
+import json
 
-community_chest_cards = {
-    1: 200,
-    2: 200,
-    3: 50,
-    4: 50,
-    5: "Get out of jail free.",
-    6: "Go directly to jail. Do not collect $200.",
-    7: 200,
-    8: 100,
-    9: 20,
-    10: 10,
-    11: 100,
-    12: -100,
-    13: -150,
-    14: 25,
-    15: -(40 * houses + 115 * hotels),
-    16: 10,
-    17: 100,
-}
+properties = ""
+
+with open("Monopoly/Properties.json", 'r') as file:
+    properties = json.load(file)
+
+def read_file_in_batches(file_path, batch_size=32):
+    with open(file_path, 'r') as file:
+        batch = []
+        for line in file:
+            batch.append(line.strip())
+            if len(batch) == batch_size:
+                yield batch
+                batch = []
+
+        # Yield the last batch (if any) that might be smaller than the specified batch size
+        if batch:
+            yield batch
+
+# Example usage:
+file_path = "Monopoly/in.txt"
+
+for batch_number, batch_lines in enumerate(read_file_in_batches(file_path, batch_size=32), start=1):
+
+    bankAccounts = {"A" : 0, "B": 0, "C" : 0, "D" : 0}
+
+    propertyOwnerShips = {}
+
+    for i in range(28):
+        property = batch_lines[i].split()
+
+        if len(property) > 4:
+            owner = property[-1]
+            propertyName = property[0]
+            houses = int(property[2])
+            mortgaged = property[3]
+
+            curPrice = 0
+
+            curPrice += properties[propertyName]["Price per house"] * houses
+
+            curPrice += properties[propertyName]["Price"]
+
+            if mortgaged == 1:
+                curPrice -= properties[propertyName]["Mortgage"]
+            else:
+                propertyOwnerShips[propertyName] = {"owner" : owner, "houses" : houses}
+
+            bankAccounts[owner] += curPrice
+
+        else:
+            continue
+
+
+    # calculate based on positions
+
+    for i in range(29, 32):
+        line = batch_lines[i].split()
+
+        player = line[0]
+        remaining = line[1]
+        block = line[2]
+
+        bankAccounts[player] += int(remaining)
+
+        if block in propertyOwnerShips:
+            # remove rent from owner
+            rent =  properties[block]["Rent"][propertyOwnerShips[block]["houses"]]
+
+            bankAccounts[propertyOwnerShips[block]["owner"]] -= rent
+
+            # send rent to payer
+            bankAccounts[player] += rent
+
+    print(max(bankAccounts.values()))

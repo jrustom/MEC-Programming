@@ -130,7 +130,7 @@ class Labyrinth:
 def write(path, output_filename):
     '''
     Used for submission
-    Writes the path of djikstras to the output file
+    Writes the path of dijkstras to the output file
     '''
 
     with open(output_filename, 'w') as file:
@@ -139,7 +139,7 @@ def write(path, output_filename):
 
 if __name__ == "__main__":
 
-    showGraph = True # used for demo, when set to true will display graph and path
+    showGraph = False # used for demo, when set to true will display graph and path
 
     # Generate a visual representation of graph for demo
     if showGraph:
@@ -165,9 +165,9 @@ if __name__ == "__main__":
         difficulties = ["easy", "hard", "extreme"]
 
         for diff in difficulties:
-            input_folder = f"Labyrinth/labyrinths/{diff}/"
+            input_folder = f"labyrinth/labyrinths/{diff}/"
 
-            output_folder = f"Labyrinth/solutions/{diff}/"
+            output_folder = f"labyrinth/solutions/{diff}/"
 
             # iterate over all mazes
             for filename in os.listdir(input_folder):

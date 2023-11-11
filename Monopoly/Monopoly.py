@@ -6,7 +6,7 @@ properties = ""
 Property data taken from here
 https://www.falstad.com/monopoly.html
 '''
-with open("Monopoly/Properties.json", 'r') as file:
+with open("monopoly/Properties.json", 'r') as file:
     properties = json.load(file)
 
 def read_file_in_batches(file_path, batch_size=32):
@@ -21,7 +21,7 @@ def read_file_in_batches(file_path, batch_size=32):
         if batch:
             yield batch
 
-file_path = "Monopoly/in.txt"
+file_path = "monopoly/in.txt"
 
 res = []
 
@@ -93,6 +93,6 @@ for batch_number, batch_lines in enumerate(read_file_in_batches(file_path, batch
     res.append(max(500,sum(bankAccounts.values())//4)) # return average of sums
 
 
-with open('Monopoly/out.txt', 'w') as file:
+with open('monopoly/out.txt', 'w') as file:
     for node in res:
         file.write(f"{node}\n")

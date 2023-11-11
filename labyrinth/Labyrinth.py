@@ -165,9 +165,9 @@ if __name__ == "__main__":
         difficulties = ["easy", "hard", "extreme"]
 
         for diff in difficulties:
-            input_folder = f"Labyrinth/labyrinths/{diff}/"
+            input_folder = f"labyrinth/labyrinths/{diff}/"
 
-            output_folder = f"Labyrinth/solutions/{diff}/"
+            output_folder = f"labyrinth/solutions/{diff}/"
 
             # iterate over all mazes
             for filename in os.listdir(input_folder):

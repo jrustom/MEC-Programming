@@ -2,6 +2,10 @@ import json
 
 properties = ""
 
+'''
+Property data taken from here
+https://www.falstad.com/monopoly.html
+'''
 with open("Monopoly/Properties.json", 'r') as file:
     properties = json.load(file)
 

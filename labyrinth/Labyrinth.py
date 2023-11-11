@@ -18,6 +18,9 @@ class Labyrinth:
         For each tile, it checks if it's a wall tile;
         If so, it moves on.
         Otherwise, it takes the a, r, c values and adds a node to the graph.
+
+        https://en.wikipedia.org/wiki/Hexagonal_Efficient_Coordinate_System
+
         It generates the positions of the 6 potential neighboring nodes based on the coordinate information provided in the link:
         https://en.wikipedia.org/wiki/File:HECS_Nearest_Neighbors.png
 
